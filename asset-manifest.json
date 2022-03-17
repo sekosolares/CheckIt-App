@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CheckIt-App/static/css/main.fbdeeeef.css",
+    "main.js": "/CheckIt-App/static/js/main.43291ab4.js",
+    "index.html": "/CheckIt-App/index.html",
+    "main.fbdeeeef.css.map": "/CheckIt-App/static/css/main.fbdeeeef.css.map",
+    "main.43291ab4.js.map": "/CheckIt-App/static/js/main.43291ab4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbdeeeef.css",
+    "static/js/main.43291ab4.js"
+  ]
+}
