@@ -1,0 +1,14 @@
+.Button {
+      position: relative;
+      left: 2rem;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10rem;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: rgb(3, 71, 80);
+      color: #fff;
+      font-size: 1.4rem;
+      border: 0;
+      z-index: 10;
+}

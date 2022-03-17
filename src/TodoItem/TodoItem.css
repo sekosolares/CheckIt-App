@@ -1,0 +1,41 @@
+.TodoItem {
+      display: flex;
+      width: 35rem;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.TodoItem-CheckBox {
+      font-size: 1.6rem;
+      padding: 1.2rem;
+      cursor: pointer;
+}
+
+.CheckBox-Pending {
+      color: rgb(187, 33, 84);
+      border: .1rem solid rgb(187, 33, 84);
+}
+
+.CheckBox-Completed {
+      color: rgb(11, 145, 71);
+      border: .1rem solid rgb(11, 145, 71);
+}
+
+.TodoItem-Text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Text-Completed {
+      text-decoration: line-through;
+}
+
+.TodoItem-Delete {
+      font-size: 2.4rem;
+      color: rgb(139, 14, 14);
+      cursor: pointer;
+      font-weight: bolder;
+      padding: .5rem;
+}

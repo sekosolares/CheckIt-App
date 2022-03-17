@@ -1,0 +1,9 @@
+.Search {
+      padding: 1rem;
+      border: 0;
+      box-shadow: 0 0 10px 2px #555;
+      margin: 3rem;
+      border-radius: .5rem;
+      width: 30rem;
+      font-size: 1.4rem;
+}
