@@ -7,7 +7,7 @@ function CreateTodoButton(props) {
       };
 
       return (
-            <button className="Button" onClick={onClickButton}> + </button>
+            <button accessKey='a' className="Button" onClick={onClickButton}> + </button>
       );
 }
 

@@ -9,6 +9,9 @@ import { Modal } from '../Modal';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoForm } from '../TodoForm';
 import { TodoHeader } from '../TodoHeader';
+import { TodosLoading } from '../TodosLoading';
+import { TodosError } from '../TodosError';
+import { TodosEmpty } from '../TodosEmpty';
 
 function App() {
   const {
@@ -40,22 +43,26 @@ return (
               />
         </TodoHeader>
 
-        <TodoList>
-        {error && <li className="App-State State-Error">Something Went Wrong...</li>}
-        {loading && <li className="App-State State-Loading">Loading content. Please wait a bit...</li>}
-        {(!loading && !searchedTodos.length) && <li className="App-State">Let's add a new Task! 😊</li>}
+      <TodoList
+            error={error}
+            loading={loading}
+            searchedTodos={searchedTodos}
 
-        {searchedTodos.map(todo => (
-        <TodoItem
-              key={todo.text}
-              text={todo.text}
-              completed={todo.completed}
-              onComplete={() => completeTodo(todo.text)}
-              onUnComplete={() => unCompleteTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
-        />
-        ))}
-        </TodoList>
+            onError={() => <TodosError />}
+            onLoading={() => <TodosLoading />}
+            onEmptyTodos={() => <TodosEmpty />}
+
+            render={todo => (
+                  <TodoItem
+                        key={todo.text}
+                        text={todo.text}
+                        completed={todo.completed}
+                        onComplete={() => completeTodo(todo.text)}
+                        onUnComplete={() => unCompleteTodo(todo.text)}
+                        onDelete={() => deleteTodo(todo.text)}
+                  />
+            )}
+      />
 
         {openModal && (
               <Modal>

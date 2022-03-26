@@ -32,12 +32,14 @@ function TodoForm({
                   />
                   <div className="TodoForm-buttonContainer">
                         <button
+                        accessKey="c"
                         className="TodoForm-button TodoForm-button-cancel"
-                        type="button" onClick={onCancel}>Cancelar</button>
+                        type="button" onClick={onCancel}><u>C</u>ancelar</button>
 
                         <button
+                        accessKey="d"
                         className="TodoForm-button TodoForm-button-add"
-                        type="submit">Añadir</button>
+                        type="submit">Aña<u>d</u>ir</button>
                   </div>
             </form>
       );

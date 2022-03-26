@@ -1,14 +1,20 @@
 .TodoItem {
-      display: flex;
-      width: 35rem;
-      list-style: none;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: 3rem auto 3rem;
       align-items: center;
+      list-style: none;
+      font-size: 1.3rem;
+      padding: 1rem 1.2rem;
+      font-weight: bold;
+      width: 30rem;
+      margin-top: 1rem;
+      border: 0;
+      border-radius: .8rem;
+      background-color: rgb(204 225 215);
 }
 
 .TodoItem-CheckBox {
       font-size: 1.6rem;
-      padding: 1.2rem;
       cursor: pointer;
 }
 
@@ -33,9 +39,8 @@
 }
 
 .TodoItem-Delete {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       color: rgb(139, 14, 14);
       cursor: pointer;
       font-weight: bolder;
-      padding: .5rem;
 }
