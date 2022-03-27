@@ -1,0 +1,8 @@
+.State-Empty-Results {
+      font-weight: bold;
+      font-size: 1.4rem;
+      list-style: none;
+      padding: 1.2rem 1rem;
+      max-width: 35rem;
+      border-bottom: 1px solid #333;
+}

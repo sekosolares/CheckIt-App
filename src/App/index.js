@@ -12,6 +12,7 @@ import { TodoHeader } from '../TodoHeader';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { TodosEmpty } from '../TodosEmpty';
+import { TodosEmptyResults } from '../TodosEmptyResults';
 
 function App() {
   const {
@@ -32,7 +33,7 @@ function App() {
 
 return (
   <React.Fragment>
-        <TodoHeader>
+        <TodoHeader loading={loading}>
               <TodoCounter
                     totalTodos={totalTodos}
                     completedTodos={completedTodos}
@@ -47,11 +48,15 @@ return (
             error={error}
             loading={loading}
             searchedTodos={searchedTodos}
+            totalTodos={totalTodos}
+            searchedText ={searchValue}
 
             onError={() => <TodosError />}
             onLoading={() => <TodosLoading />}
             onEmptyTodos={() => <TodosEmpty />}
+            onEmptySearchedResults={(searchedText) => <TodosEmptyResults searchedText={searchedText} />}
 
+            // Render Prop:
             render={todo => (
                   <TodoItem
                         key={todo.text}
@@ -62,7 +67,20 @@ return (
                         onDelete={() => deleteTodo(todo.text)}
                   />
             )}
-      />
+      >
+      {/* Render Function:
+            {todo => (
+                  <TodoItem
+                        key={todo.text}
+                        text={todo.text}
+                        completed={todo.completed}
+                        onComplete={() => completeTodo(todo.text)}
+                        onUnComplete={() => unCompleteTodo(todo.text)}
+                        onDelete={() => deleteTodo(todo.text)}
+                  />
+            )}
+      */}
+      </TodoList>
 
         {openModal && (
               <Modal>

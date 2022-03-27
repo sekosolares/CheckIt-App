@@ -6,3 +6,7 @@
       border-bottom: 0.2rem solid #485;
       width: 40rem;
 }
+
+.TodoCounter.loading {
+      opacity: .25;
+}

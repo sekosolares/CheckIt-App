@@ -1,3 +1,8 @@
 .TodoList-Container {
-      padding: 1rem 0 1rem 3rem;
+      padding: 1.2rem 0 1rem 2rem;
+}
+
+.TodoList-Container ul {
+      margin: 0;
+      padding: 0;
 }
