@@ -13,6 +13,7 @@ import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { TodosEmpty } from '../TodosEmpty';
 import { TodosEmptyResults } from '../TodosEmptyResults';
+import { ChangeAlertWithStoracheListener } from '../ChangeAlert';
 
 function App() {
   const {
@@ -28,7 +29,8 @@ function App() {
     completedTodos,
     searchValue,
     setSearchValue,
-    addTodo
+    addTodo,
+    syncTodos
 } = useTodos();
 
 return (
@@ -93,6 +95,9 @@ return (
 
         <CreateTodoButton
               setOpenModal={setOpenModal}
+        />
+        <ChangeAlertWithStoracheListener
+            syncronize={syncTodos}
         />
   </React.Fragment>
 );
