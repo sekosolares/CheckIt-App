@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CheckIt-App/static/css/main.3916774f.css",
-    "main.js": "/CheckIt-App/static/js/main.c9d503f8.js",
+    "main.css": "/CheckIt-App/static/css/main.58bf4f6c.css",
+    "main.js": "/CheckIt-App/static/js/main.3e9919a1.js",
     "index.html": "/CheckIt-App/index.html",
-    "main.3916774f.css.map": "/CheckIt-App/static/css/main.3916774f.css.map",
-    "main.c9d503f8.js.map": "/CheckIt-App/static/js/main.c9d503f8.js.map"
+    "main.58bf4f6c.css.map": "/CheckIt-App/static/css/main.58bf4f6c.css.map",
+    "main.3e9919a1.js.map": "/CheckIt-App/static/js/main.3e9919a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3916774f.css",
-    "static/js/main.c9d503f8.js"
+    "static/css/main.58bf4f6c.css",
+    "static/js/main.3e9919a1.js"
   ]
 }
